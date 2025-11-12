@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Digital Garden',
   tagline: 'a collection of notes, books, articles, and things I find interesting',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/plant.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -16,7 +16,7 @@ const config: Config = {
  
   // GitHub pages deployment config
   url: 'https://bethanyann.github.io', // production url
-  baseUrl: '/digital_garden/', // '/<projectName>/' format
+  baseUrl: '/digital-garden/', // '/<projectName>/' format
   organizationName: 'bethanyann', 
   projectName: 'digital_garden', 
   deploymentBranch: 'gh-pages',
@@ -36,14 +36,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: false,
+        pages: false,
       } satisfies Preset.Options,
     ],
   ],
@@ -55,23 +54,30 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'digital garden',
+      title: 'Digital Garden',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'digital garden logo',
+        src: '/img/plant.png ',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Tutorial',
+        // },
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
         //   position: 'right',
         // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'docSidebar',
+        //   position: 'left',
+        //   label: 'testing',
+        //   href: '/',
+        // }
       ],
     },
     footer: {

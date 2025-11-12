@@ -1,8 +1,13 @@
-# First Technical Page
+---
+sidebar_position: 1
+id: tech-link
+title: Tech Links
+---
 
-A short, focused technical note to kick off the documentation.
+A collection of links that I can't seem to keep organized any other way
 
-## Summary
+
+### Summary
 A concise overview of a small utility: reading a file, transforming contents, and writing output.
 
 ## Prerequisites
